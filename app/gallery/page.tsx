@@ -1,7 +1,12 @@
+'use client'
+import { gallery } from '@/public/assets/gallery';
+import ImageGallery from 'react-image-gallery';
+
 const Gallery = () => {
+
   return (
-    <div>
-      <h1>Gallery</h1>
+    <div className="gallery">
+      <ImageGallery items={gallery} lazyLoad={true} />
     </div>
   )
 }
