@@ -1,0 +1,88 @@
+:root {
+  --ochra: rgb(205, 165, 94);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.restaurant-name {
+  color: var(--ochra);
+}
+
+.home {
+  display: grid;
+  height: 65vh;
+  height: 65dvh;
+  position: relative;
+  font-size: 3em;
+  font-weight: 800;
+  margin-top: 5rem;
+  place-items: center;
+}
+
+.welcoming {
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.grid-items {
+  display: grid;
+  padding: 30px;
+  gap: 10px;
+  grid-template-columns: repeat(2, minmax(50px, 15rem));
+  place-content: center;
+}
+
+.grid-item {
+  display: grid;
+  place-items: center;
+  grid-template-rows: 50px;
+  border: 2px solid var(--ochra);
+  padding: 1rem;
+  border-radius: 20px;
+  font-size: 1.5rem;
+}
+
+.grid-item:hover {
+  background-color: var(--ochra);
+  transition: 0.3s;
+}
+
+.link {
+  padding: 20px;
+}
+
+.cursive {
+  font-style: italic;
+  font-family: cursive;
+  font-weight: 100;
+  font-size: 1.5rem;
+}
+
+footer {
+  font-size: 1rem;
+  position: fixed;
+  bottom: 2rem;
+  right: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  .grid-items {
+      grid-template-columns: 1fr;
+  }
+
+  .welcoming {
+      font-size: 2rem;
+  }
+
+  .grid-item {
+      font-size: 1rem;
+  }
+
+  .cursive {
+      font-size: 1rem;
+  }
+}

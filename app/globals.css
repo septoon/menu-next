@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  --text-color: #fffffff6;
+}
+
+body {
+  margin: 0;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  color: var(--text-color);
+  height: "100vh";
+  height: "100dvh";
+  background-image: url("../public/IMG_8309.WEBP");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-color {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+  background: linear-gradient(rgba(0 0 0 / 80%), rgba(0 0 0 / 30%));
+  overflow: scroll;
+  position: relative;
+}
+
+.menu {
+  width: 90%;
+  height: 80vh;
+  height: 80dvh;
+  margin-top: 100px;
+}
+
+.components {
+  z-index: 999;
+  transition: .5s;
+}
+
+.activate {
+  transition: .5s;
+  transform: translateY(30dvh);
+}
+
+.main {
+  display: flex;
+}
+
+.titles {
+  width: 20%;
+  height: 80vh;
+  height: calc(100dvh - 100px);
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: start; 
+  -ms-flex-pack: start;
+  -webkit-box-align: start; 
+  -ms-flex-align: start; 
+  align-items: flex-start;
+  justify-content: space-between;
+  overflow-y: scroll;
+  overscroll-behavior: contain;
+}
+
+.items {
+  width: 80%;
+  height: calc(100dvh - 130px);
+  overflow-y: scroll;
+  overscroll-behavior: contain;
+}
+
+.menu-title {
+  margin: 40px 0 40px 0;
+}
+
+
+.title_item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  transition: .5s;
+  border-bottom: 1px dotted var(--text-color);
+  padding-bottom: 7px;
+}
+
+.item_name {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: start; 
+  -ms-flex-pack: start;
+  -webkit-box-align: start; 
+  -ms-flex-align: start; 
+  align-items: flex-start;
+  flex-basis: 80%;
+  text-align: initial;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 25%;
+}
+
+.description {
+  font-size: small;
+}
+
+.menu-subtitle {
+  color: var(--text-color);
+  border: none;
+  background-color: transparent;
+  /* font-weight: bold; */
+  font-size: 20px;
+  transition: .5s;
+  text-align: left;
+}
+
+.menu-subtitle:hover {
+  cursor: pointer;
+  /* transform: scaleX(1.1); */
+  opacity: .7;
+}
+
+.menu-subtitle:focus {
+  color: rgb(154, 163, 158);
+}
