@@ -1,5 +1,3 @@
-import Maps from '../components/Maps';
-
 const Booking = () => {
   return (
     <div className="booking">
