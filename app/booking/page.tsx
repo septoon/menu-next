@@ -18,7 +18,7 @@ const Booking = () => {
         </p>
       </div>
       <div className="map-wrapper">
-        <Maps />
+        {/* <Maps /> */}
       </div>
       <div className="hotel">
         <p>Интересует проживание в гостинице? Приглашаем вас в нашу гостиницу <a href='https://alushta-king.com/' target={'_blank'} className="king">"Кинг"</a>(подробрости в ссылке)</p>
